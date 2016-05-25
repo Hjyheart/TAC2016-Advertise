@@ -7,10 +7,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage'],
+        anchors:['first', 'second', 'third', 'forth', 'fifth'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
+        navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'forthSlide', 'fifthSlide'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -42,7 +42,7 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: false,
-        sectionsColor : ['#000000', '#000000', '#000000', '#000000', '#000000', '#000000', '#000000'],
+        sectionsColor : ['#000000', '#ffffff', '#000000', '#000000', '#000000', '#000000', '#000000'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
@@ -54,14 +54,41 @@ $(document).ready(function() {
         slideSelector: '.slide',
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
-        afterResize: function(){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        afterLoad: function(anchorLink, index) {
+
+            if (index == 1) {
+                $('#one img').stop(true, true).fadeIn(3000);
+                $('#one .oneText').stop(true, true).delay(1500).fadeIn(3000);
+            }
+        },
+
+        onLeave: function(index, nextIndex, direction) {
+            if (index == 1) {
+                $('#up').show();
+            }
+            if (index == 6) {
+                $('#down').show()
+            }
+
+            if (index == 2 && direction == 'up') {
+                $('#up').hide();
+            }
+            if (index == 5 && direction == 'down') {
+                $('#down').hide();
+            }
+
+            if (index == 1) {
+                $('#one img').stop(true, true).hide();
+                $('#one .oneText').stop(true, true).hide();
+            }
+        }
     });
 
-    $('#one img:first').hide(8000);
-    $('#one img:last').hide().delay(2000).fadeIn(6000);
+    $('#up').click(function () {
+        $.fn.fullpage.moveSectionUp();
+    });
+
+    $('#down').click(function () {
+        $.fn.fullpage.moveSectionDown();
+    });
 });

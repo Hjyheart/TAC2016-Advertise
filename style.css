@@ -1,20 +1,66 @@
-#one img:nth-child(1) {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    top: 50%;
-    margin-left: -50px;
-    margin-top: -180px;
+body {
+    font-family: '华文细黑', '微软雅黑', 'Segoe UI', 'PingFang SC';
 }
 
-#one img:nth-child(2) {
-    width: 300px;
+.page {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.page:nth-child(2) {
+    top: 0;
+}
+
+.page:nth-child(3) {
+    bottom: 0;
+}
+
+.pageController {
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+#up {
+    display: none;
+}
+
+.pageController img {
+    height: 20px;
+}
+
+#one img {
+    width: 120px;
+    height: 120px;
     position: absolute;
     z-index: 100;
     left: 50%;
     top: 50%;
-    margin-top: -150px;
-    margin-left: -150px;
+    margin-left: -58px;
+    margin-top: -160px;
+    display: none;
+}
+
+#one .oneText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    margin-left: -50%;
+    display: none;
+}
+
+#one p {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
 }
