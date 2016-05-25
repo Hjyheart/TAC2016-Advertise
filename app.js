@@ -42,7 +42,7 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: false,
-        sectionsColor : ['#000000', '#ffffff', '#000000', '#000000', '#000000', '#000000', '#000000'],
+        sectionsColor : ['#000000', '#000000', '#000000', '#000000', '#000000', '#000000', '#000000'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
@@ -57,8 +57,14 @@ $(document).ready(function() {
         afterLoad: function(anchorLink, index) {
 
             if (index == 1) {
-                $('#one img').stop(true, true).fadeIn(3000);
-                $('#one .oneText').stop(true, true).delay(1500).fadeIn(3000);
+                $('#one img').stop(true, true).fadeIn(2500);
+                $('#one .oneText').stop(true, true).delay(1000).fadeIn(2500);
+            } else if (index == 2) {
+                $('#two .code').stop(true, true).animate({height: '240px'}, 3000, function () {
+                    $('#two .picContainer').stop(true, true).animate({height: '220px'}, 2000);
+                });
+            } else if (index == 3) {
+                
             }
         },
 
@@ -67,7 +73,7 @@ $(document).ready(function() {
                 $('#up').show();
             }
             if (index == 6) {
-                $('#down').show()
+                $('#down').show();
             }
 
             if (index == 2 && direction == 'up') {
@@ -80,6 +86,9 @@ $(document).ready(function() {
             if (index == 1) {
                 $('#one img').stop(true, true).hide();
                 $('#one .oneText').stop(true, true).hide();
+            } else if (index == 2) {
+                $('#two .code').stop(true, true).height(0);
+                $('#two .picContainer').stop(true, true).height(0);
             }
         }
     });

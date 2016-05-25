@@ -1,5 +1,15 @@
 body {
     font-family: '华文细黑', '微软雅黑', 'Segoe UI', 'PingFang SC';
+    color: #ffffff;
+}
+
+h3 {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+pre {
+    font-family: '华文细黑', '微软雅黑', 'Segoe UI', 'PingFang SC';
 }
 
 .page {
@@ -62,5 +72,58 @@ body {
     margin: 10px 0;
     text-align: center;
     font-size: 24px;
-    color: #ffffff;
+}
+
+#two .code {
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 10px;
+    height: 0;
+    overflow: hidden;
+}
+
+#two .keyClass {
+    color: #66b7ff;
+}
+
+#two .class {
+    color: #fffb70;
+}
+
+#two .keyFunc {
+    color: #ff6c62;
+}
+
+#two .func {
+    color: #a7ff90;
+}
+
+#two .picContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40%;
+    margin-top: 10px;
+    height: 0;
+    width: 80%;
+    overflow: hidden;
+}
+
+#two img {
+    width: 100%;
+}
+
+#three img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
 }
