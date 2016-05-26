@@ -43,7 +43,7 @@ pre {
 }
 
 .pageController img {
-    height: 20px;
+    height: 15px;
 }
 
 #one img {
@@ -106,24 +106,75 @@ pre {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -40%;
+    margin-left: -50%;
     margin-top: 10px;
     height: 0;
-    width: 80%;
+    width: 100%;
     overflow: hidden;
+    text-align: center;
 }
 
 #two img {
-    width: 100%;
+    text-align: center;
+    height: 180px;
+}
+
+#three {
+    text-align: center;
+}
+
+#three h3 {
+    text-align: left;
 }
 
 #three img {
-    display: block;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    transform: scale(0.5);
+    position: relative;
+    height: 20%;
+    margin: 5% auto;
+}
+
+#three img:nth-child(2), #three img:nth-child(6) {
+    left: -100%;
+}
+
+#three img:nth-child(4) {
+    right: -100%;
+}
+
+#four {
+    transform-style: preserve-3d;
+    -webkit-perspective: 200px;
+}
+
+#four .iconContainer {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    padding: 20px;
+}
+
+#four img {
+    height: 60px;
+    margin: 10px;
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    -o-transition: transform 2s;
+    transition: transform 2s;
+}
+
+.up {
+    -webkit-transform: translateZ(200px);
+    -moz-transform: translateZ(200px);
+    -ms-transform: translateZ(200px);
+    -o-transform: translateZ(200px);
+    transform: translateZ(200px);
+}
+
+.drop {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
 }
