@@ -12,39 +12,6 @@ pre {
     font-family: '华文细黑', '微软雅黑', 'Segoe UI', 'PingFang SC';
 }
 
-.page {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 40px;
-}
-
-.page:nth-child(2) {
-    top: 0;
-}
-
-.page:nth-child(3) {
-    bottom: 0;
-}
-
-.pageController {
-    position: absolute;
-    color: #ffffff;
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    margin-top: -10px;
-    margin-left: -15px;
-}
-
-#up {
-    display: none;
-}
-
-.pageController img {
-    width: 30px;
-}
-
 #one img {
     width: 120px;
     height: 120px;
@@ -73,7 +40,37 @@ pre {
     font-size: 24px;
 }
 
-#two .code {
+#two {
+    text-align: center;
+}
+
+#two h3 {
+    text-align: left;
+}
+
+#two img {
+    position: relative;
+    height: calc((100% - 206px) / 3);
+    margin: 15px auto;
+}
+
+#two img:nth-child(2), #two img:nth-child(6) {
+    left: -100%;
+}
+
+#two img:nth-child(4) {
+    right: -100%;
+}
+
+#three .threeBG {
+    width: 90%;
+    height: calc(100% - 106px);
+    margin: 0 5%;
+    background-size: cover;
+    background-image: url('images/tac.jpg');
+}
+
+#four .code {
     font-size: 18px;
     line-height: 30px;
     display: inline-block;
@@ -85,23 +82,23 @@ pre {
     overflow: hidden;
 }
 
-#two .keyClass {
+#four .keyClass {
     color: #66b7ff;
 }
 
-#two .class {
+#four .class {
     color: #fffb70;
 }
 
-#two .keyFunc {
+#four .keyFunc {
     color: #ff6c62;
 }
 
-#two .func {
+#four .func {
     color: #a7ff90;
 }
 
-#two .picContainer {
+#four .picContainer {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -113,56 +110,34 @@ pre {
     text-align: center;
 }
 
-#two img {
+#four img {
     text-align: center;
     height: 180px;
 }
 
-#three {
-    text-align: center;
-}
-
-#three h3 {
-    text-align: left;
-}
-
-#three img {
-    position: relative;
-    height: calc((100% - 206px) / 3);
-    margin: 15px auto;
-}
-
-#three img:nth-child(2), #three img:nth-child(6) {
-    left: -100%;
-}
-
-#three img:nth-child(4) {
-    right: -100%;
-}
-
-#four {
+#five {
     transform-style: preserve-3d;
     -webkit-perspective: 200px;
 }
 
-#four h3:nth-child(3) {
+#five h3:nth-child(3) {
     text-align: center;
     display: none;
 }
 
-#four table {
+#five table {
     text-align: center;
     margin: 0 auto;
 }
 
-#four table td {
+#five table td {
     box-sizing: border-box;
     height: 100px;
     width: 100px;
     padding: 10px;
 }
 
-#four table img {
+#five table img {
     height: 80px;
 }
 
@@ -180,4 +155,25 @@ pre {
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
+}
+
+#six .sixBG {
+    width: 90%;
+    height: calc(100% - 106px);
+    margin: 0 5%;
+    background-size: cover;
+    background-image: url('images/workshop.JPG');
+}
+
+#seven {
+    text-align: center;
+}
+
+#seven h1 {
+    margin-top: calc(50% - 20px);
+    display: none;
+}
+
+#seven h2 {
+    display: none;
 }
