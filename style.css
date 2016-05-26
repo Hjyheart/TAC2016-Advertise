@@ -30,12 +30,11 @@ pre {
 .pageController {
     position: absolute;
     color: #ffffff;
-    font-size: 20px;
     cursor: pointer;
     top: 50%;
     left: 50%;
     margin-top: -10px;
-    margin-left: -20px;
+    margin-left: -15px;
 }
 
 #up {
@@ -43,7 +42,7 @@ pre {
 }
 
 .pageController img {
-    height: 15px;
+    width: 30px;
 }
 
 #one img {
@@ -129,8 +128,8 @@ pre {
 
 #three img {
     position: relative;
-    height: 20%;
-    margin: 5% auto;
+    height: calc((100% - 206px) / 3);
+    margin: 15px auto;
 }
 
 #three img:nth-child(2), #three img:nth-child(6) {
@@ -146,21 +145,25 @@ pre {
     -webkit-perspective: 200px;
 }
 
-#four .iconContainer {
-    box-sizing: border-box;
-    width: 80%;
-    margin: 0 10%;
-    padding: 20px;
+#four h3:nth-child(3) {
+    text-align: center;
+    display: none;
 }
 
-#four img {
-    height: 60px;
-    margin: 10px;
-    -webkit-transition: transform 2s;
-    -moz-transition: transform 2s;
-    -ms-transition: transform 2s;
-    -o-transition: transform 2s;
-    transition: transform 2s;
+#four table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#four table td {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+#four table img {
+    height: 80px;
 }
 
 .up {

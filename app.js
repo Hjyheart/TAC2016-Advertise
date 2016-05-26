@@ -67,9 +67,14 @@ $(document).ready(function() {
                 $('#three img:even').stop(true, true).animate({left: '0'}, 1000);
                 $('#three img:odd').stop(true, true).animate({right: '0'}, 1000);
             } else if (index == 4) {
-                $('#four img').each(function () {
+                var delayArray = [3.5, 3, 1.5, 1, 2.5, 2, 0.5, 4, 0];
+                $('#four img').each(function (index) {
+                    $(this).css('transition', '');
+                    $(this).removeClass('drop').addClass('up');
+                    $(this).css('transition', 'transform 1.5s ease ' + delayArray[index] + 's');
                     $(this).removeClass('up').addClass('drop');
                 });
+                $('#four h3:last').stop(true, true).delay(6000).fadeIn(1000);
             }
         },
 
@@ -97,6 +102,12 @@ $(document).ready(function() {
             } else if (index == 3) {
                 $('#three img:even').stop(true, true).css({'left': '-100%'});
                 $('#three img:odd').stop(true, true).css({'right': '-100%'});
+            } else if (index == 4) {
+                $('#four img').each(function () {
+                    $(this).css('transition', '');
+                    $(this).removeClass('drop').addClass('up');
+                });
+                $('#four h3:last').stop(true, true).fadeOut();
             }
         }
     });
