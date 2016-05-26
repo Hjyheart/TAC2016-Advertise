@@ -7,10 +7,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['first', 'second', 'third', 'forth', 'fifth'],
+        anchors:['first', 'second', 'third', 'forth', 'fifth', 'sixth'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'forthSlide', 'fifthSlide'],
+        navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'forthSlide', 'fifthSlide', 'sixthSlide'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
