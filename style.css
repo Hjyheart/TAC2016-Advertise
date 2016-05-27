@@ -1,30 +1,37 @@
 body {
-    font-family: '华文细黑', '微软雅黑', 'Segoe UI', 'PingFang SC';
+    font-family: '微软雅黑', 'Segoe UI', '华文细黑', 'PingFang SC';
     color: #ffffff;
 }
 
 h3 {
     margin: 5px 0;
     font-weight: normal;
+    font-size: 35px;
 }
 
 pre {
     font-family: '华文细黑', '微软雅黑', 'Segoe UI', 'PingFang SC';
 }
 
-#one img {
-    width: 120px;
-    height: 120px;
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#tac2016 img {
+    width: 240px;
+    height: 240px;
     position: absolute;
     z-index: 100;
     left: 50%;
     top: 50%;
-    margin-left: -58px;
-    margin-top: -160px;
+    margin-left: -120px;
+    margin-top: -320px;
     display: none;
 }
 
-#one .oneText {
+#tac2016 .oneText {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -33,112 +40,114 @@ pre {
     display: none;
 }
 
-#one p {
+#tac2016 p {
     display: block;
     margin: 10px 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
 }
 
-#two {
+#tac {
     text-align: center;
 }
 
-#two h3 {
+#tac h3 {
     text-align: left;
 }
 
-#two img {
+#tac .center {
+    margin-top: -444px;
+    margin-left: -172px;
+}
+
+#tac img {
     position: relative;
-    height: calc((100% - 206px) / 3);
+    height: calc((100% - 206px) / 4);
     margin: 15px auto;
 }
 
-#two img:nth-child(2), #two img:nth-child(6) {
-    left: -100%;
+#tac img:nth-child(1), #tac img:nth-child(5) {
+    left: -1500px;
 }
 
-#two img:nth-child(4) {
-    right: -100%;
+#tac img:nth-child(3) {
+    left: 1500px;
 }
 
-#three .threeBG {
-    width: 90%;
-    height: calc(100% - 106px);
-    margin: 0 5%;
-    background-size: cover;
-    background-image: url('images/tac.jpg');
-}
-
-#four .code {
-    font-size: 18px;
-    line-height: 30px;
+#workshop .code {
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 35px;
     display: inline-block;
     position: absolute;
     left: 50%;
-    margin-left: -150px;
-    margin-top: 10px;
+    margin-left: -206px;
+    margin-top: 50px;
     height: 0;
     overflow: hidden;
 }
 
-#four .keyClass {
+#workshop .keyClass {
     color: #66b7ff;
 }
 
-#four .class {
+#workshop .class {
     color: #fffb70;
 }
 
-#four .keyFunc {
+#workshop .keyFunc {
     color: #ff6c62;
 }
 
-#four .func {
+#workshop .func {
     color: #a7ff90;
 }
 
-#four .picContainer {
+#workshop .picContainer {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
     margin-left: -50%;
-    margin-top: 10px;
+    margin-top: -50px;
     height: 0;
     width: 100%;
     overflow: hidden;
     text-align: center;
 }
 
-#four img {
+#workshop img {
     text-align: center;
-    height: 180px;
+    width: 600px;
 }
 
-#five {
+#technology {
     transform-style: preserve-3d;
     -webkit-perspective: 200px;
 }
 
-#five h3:nth-child(3) {
+#technology table {
     text-align: center;
-    display: none;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -370px;
 }
 
-#five table {
-    text-align: center;
-    margin: 0 auto;
-}
-
-#five table td {
+#technology table td {
     box-sizing: border-box;
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
     padding: 10px;
 }
 
-#five table img {
-    height: 80px;
+#technology table img {
+    height: 160px;
+}
+
+#technology table h3 {
+    text-align: center;
+    display: none;
 }
 
 .up {
@@ -157,28 +166,83 @@ pre {
     transform: translateZ(0);
 }
 
-#six .sixBG {
+
+#tacPic .bg {
     width: 90%;
     height: calc(100% - 106px);
     margin: 0 5%;
     background-size: cover;
+    background-position: 30% 50%;
+    background-image: url('images/tac.jpg');
+}
+
+#workshopPic .bg {
+    width: 90%;
+    height: calc(100% - 106px);
+    margin: 0 5%;
+    background-size: cover;
+    background-position: 50% 50%;
     background-image: url('images/workshop.JPG');
 }
 
-#seven h1 {
+#welcome h1 {
+    font-size: 45px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -80px;
-    margin-left: -133px;
+    margin-left: -187px;
     display: none;
 }
 
-#seven h2 {
+#welcome h2 {
+    font-size: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -20px;
-    margin-left: -37px;
+    margin-top: 0;
+    margin-left: -55px;
     display: none;
+}
+
+@media (max-height: 940px) {
+    h3 {
+        margin: 5px 0;
+        font-size: 25px;
+    }
+
+    #tac .center {
+        margin-top: -225px;
+        margin-left: -102px;
+    }
+
+    #tac img {
+        height: 150px;
+    }
+
+    #workshop .code {
+        font-size: 22px;
+        letter-spacing: 3px;
+        line-height: 28px;
+        margin-left: -153px;
+        margin-top: 20px;
+    }
+
+    #workshop img {
+        margin-top: 40px;
+        width: 400px;
+    }
+
+    #technology table {
+        margin-top: -180px;
+    }
+
+    #technology table td {
+        height: 120px;
+        width: 120px;
+    }
+
+    #technology table img {
+        height: 100px;
+    }
 }
