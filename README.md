@@ -7,4 +7,4 @@ Tongji Apple Club 2016年宣讲招新页面
 
 `TAC2016-Advertise` is available under the MIT license.
 
-除了GC，GC使用需要获得本人同意并支付一定使用费用！
+除了GC(Google Club, Game Center, Gay Club, etc)，GC使用需要获得本人同意并支付一定使用费用
