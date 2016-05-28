@@ -55,7 +55,7 @@ $(document).ready(function() {
 
         //events
         afterLoad: function(anchorLink, index) {
-
+        
             if (index == 1) {
                 $('#tac2016 img').stop(true, true).fadeIn(2500);
                 $('#tac2016 .oneText').stop(true, true).delay(1000).fadeIn(2500);
@@ -79,9 +79,9 @@ $(document).ready(function() {
                 $('#welcome h2').stop(true, true).delay(1000).fadeIn(2500);
             }
         },
-
+        
         onLeave: function(index, nextIndex, direction) {
-
+        
             if (index == 1) {
                 $('#tac2016 img').stop(true, true).hide();
                 $('#tac2016 .oneText').stop(true, true).hide();

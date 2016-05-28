@@ -123,7 +123,7 @@ pre {
 
 #technology {
     transform-style: preserve-3d;
-    -webkit-perspective: 200px;
+    -webkit-perspective: 100px;
 }
 
 #technology table {
